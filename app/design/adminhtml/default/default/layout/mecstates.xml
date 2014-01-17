@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+  <mecstates_adminhtml_states_index>
+	<reference name="content">
+	  <block type="mecstates/adminhtml_states" name="states" />
+	</reference>
+  </mecstates_adminhtml_states_index>
+  <mecstates_adminhtml_city_index>
+	<reference name="content">
+	  <block type="mecstates/adminhtml_city" name="city" />
+	</reference>
+  </mecstates_adminhtml_city_index>
+  <mecstates_adminhtml_area_index>
+	<reference name="content">
+	  <block type="mecstates/adminhtml_area" name="area" />
+	</reference>
+  </mecstates_adminhtml_area_index>
+  
+  <!--<adminhtml_customer_edit>
+	<reference name="head">
+		<action method="addJs"><file>jquery/jquery-1.10.2.min.js</file></action>
+		<action method="addJs"><file>jquery/jquery.noConflict.js</file></action>
+	</reference>
+  </adminhtml_customer_edit>-->
+  
+  
+</layout>

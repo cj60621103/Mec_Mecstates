@@ -1,0 +1,56 @@
+<?xml version="1.0"?>   
+<layout version="0.2.0">   
+  <mecstates_index_index>   
+    <reference name="root">   
+      <action method="setTemplate"><template>page/1column.phtml</template></action>   
+    </reference>   
+    <reference name="content">   
+      <block type="mecstates/index" name="mecstates_index" template="mecstates/index.phtml"/>   
+    </reference>   
+  </mecstates_index_index> 
+
+
+  <customer_address_form translate="label">
+		<reference name="head">
+			<action method="addJs"><script>jquery/jquery-1.10.2.min.js</script></action>
+			<action method="addJs"><script>jquery/jquery.noConflict.js</script></action>
+		</reference>
+        <reference name="my.account.wrapper">
+			<reference name="customer_address_edit">
+				<action method="setTemplate"><template>mecstates/customer/address/edit.phtml</template></action> 
+			</reference>
+        </reference>
+  </customer_address_form>
+  
+  <checkout_onepage_index>
+	<reference name="head">
+		<action method="addJs"><script>jquery/jquery-1.10.2.min.js</script></action>
+		<action method="addJs"><script>jquery/jquery.noConflict.js</script></action>
+	</reference>
+	<reference name="content">
+		<reference name="checkout.onepage">
+			<reference name="checkout.onepage.billing">
+				<action method="setTemplate"><template>mecstates/checkout/onepage/billing.phtml</template></action> 
+			</reference>
+			<reference name="checkout.onepage.shipping">
+				<action method="setTemplate"><template>mecstates/checkout/onepage/shipping.phtml</template></action> 
+			</reference>
+		</reference>
+	</reference>
+  </checkout_onepage_index>
+  
+  
+  <checkout_multishipping_customer_address>
+	<reference name="head">
+		<action method="addJs"><script>jquery/jquery-1.10.2.min.js</script></action>
+		<action method="addJs"><script>jquery/jquery.noConflict.js</script></action>
+	</reference>
+	<reference name="content">
+		<reference name="customer_address_edit">
+			<action method="setTemplate"><template>mecstates/customer/address/edit.phtml</template></action> 
+		</reference>
+	</reference>
+  </checkout_multishipping_customer_address>
+  
+</layout>   
+	
